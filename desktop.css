@@ -1,0 +1,21 @@
+.background {
+    background-image: url('assets/background-pattern-desktop.svg');
+    height: 40vh;
+}
+
+main {
+    max-width: 35%;
+    padding: 1.8em;
+}
+
+.title h1 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 1.15em;
+}
+
+h3:hover {
+    color: hsl(280.92deg 82.98% 53.92%);
+}
