@@ -1,14 +1,17 @@
-const btns = document.querySelectorAll('.exp-shr');
-let imageState = 1;
+const questions = document.querySelectorAll('.question');
 
-btns.forEach(function (btn) {
-    btn.addEventListener('click', function () {
-        if(imageState === 1){
-            btn.src = 'assets/icon-minus.svg';
-            imageState = 2;
-        } else {
-            btn.src = 'assets/icon-plus.svg';
-            imageState = 1;
+questions.forEach(function(question) {
+    question.addEventListener('click', function(){
+        const top = question.querySelector('.question-top');
+        const img = top.querySelector('.exp-shr');
+
+        const answer = question.querySelector('p');
+        if (answer.classList.contains('closed')) {
+            img.src = 'assets/icon-minus.svg';
+            answer.classList.toggle('closed')
+        } else if (!answer.classList.contains('closed')){
+            img.src = 'assets/icon-plus.svg';
+            answer.classList.toggle('closed')
         }
     })
 })
