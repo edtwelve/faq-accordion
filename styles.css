@@ -17,14 +17,18 @@ body {
 
 .background {
     background-image: url('assets/background-pattern-mobile.svg');
-    height: 30%;
+    height: 30vh;
+    position: absolute;
+    top: 0;
+    width:100%;
 }
 
 main {
-    margin: 0 1em;
+    margin: 0 1.5em;
     background-color: white;
     padding: 1.5em;
     border-radius: 7px;
+    z-index: 1;
 }
 
 .title {
@@ -38,16 +42,21 @@ main {
 }
 
 .title h1 {
-    font-size: 2em;
+    font-size: 2.5em;
 }
 
 h1, h3 {
     color: hsl(292, 42%, 14%);
 }
 
+h3 {
+    font-size: 1.05em;
+}
+
 .answer {
     color: hsl(292, 16%, 49%);
     margin-top: 1.25em;
+    line-height: 1.5em;
 }
 
 hr {
@@ -67,4 +76,8 @@ hr {
 
 .question:last-of-type {
     padding-bottom: 0;
+}
+
+.closed {
+    display: none;
 }
