@@ -11,12 +11,14 @@ body {
     place-items: center;
     height: 100vh;
 
-    background-color: hsl(292, 16%, 49%);
+    background-color: hsl(292deg 35.4% 84.3% / 45%);
     font-family: 'Work Sans';
 }
 
 .background {
     background-image: url('assets/background-pattern-mobile.svg');
+    background-size: cover;
+
     height: 30vh;
     position: absolute;
     top: 0;
@@ -60,7 +62,7 @@ h3 {
 }
 
 hr {
-    background:hsl(292, 16%, 49%);
+    border: 1px solid #e8e6e642;
 }
 
 .question {
